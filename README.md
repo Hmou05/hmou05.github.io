@@ -1,6 +1,6 @@
 # 🌐 Mohamed Hammou and Sofyane Habboch Project Management Application
 
-Welcome to the repository for our personal website hosted on [GitHub Pages](https://hmou05.github.io/), [Netlify](https://vallysite.netlify.app/)! This site is a collaborative effort showcasing our portfolio, projects, and blog content.  
+Welcome to the repository for our personal website hosted on [GitHub Pages](https://hmou05.github.io/), [Netlify](https://vallysite.netlify.app/)! This site is a collaborative effort showcasing our projects.  
 
 ---
 
@@ -18,7 +18,7 @@ Welcome to the repository for our personal website hosted on [GitHub Pages](http
 
 ---
 
-##✨About the Project  
+## ✨ About the Project  
 
 This project is a collaborative creation, designed and developed with my classmate. Together, we built a responsive and interactive website that provides a portfolio to showcase our individual and joint projects.  
 
