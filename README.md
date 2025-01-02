@@ -1,26 +1,26 @@
-# 🌐 Mohamed Hammou and Sofyane Habboch Project Management Application
+# 🌐 Mohamed Hammou and Sofyane Habbouch Projects Management Application
 
 Welcome to the repository for our personal website hosted on [GitHub Pages](https://hmou05.github.io/), [Netlify](https://vallysite.netlify.app/)! This site is a collaborative effort showcasing our projects.  
 
 ---
 
 ## 📑 Table of Contents
-- [About the Project](#about-the-project)  
-- [Key Features](#key-features)  
-- [Live Demo](#live-demo)  
-- [Getting Started](#getting-started)  
-- [Technologies Used](#technologies-used)  
-- [Directory Structure](#directory-structure)  
-- [Contributing](#contributing)  
-- [Acknowledgments](#acknowledgments)  
-- [License](#license)  
-- [Contact](#contact)  
+- [About the Project](#about-the-project)
+- [Key Features](#key-features)
+- [Live Demo](#live-demo)
+- [Getting Started](#getting-started)
+- [Technologies Used](#technologies-used)
+- [Directory Structure](#directory-structure)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+- [Contact](#contact)
 
 ---
 
 ## ✨ About the Project
 
-This project is a collaborative creation, designed and developed with my classmate. Together, we built a responsive and interactive website that provides a portfolio to showcase our individual and joint projects.  
+This project is a collaborative creation, designed and developed with my classmate Sofyane. Together, we built a responsive and interactive website that provides a portfolio to showcase our individual and joint projects.  
 
 ---
 
@@ -124,8 +124,8 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 Feel free to reach out to us:  
 - Sofyane :
-    - **Email:** [teammate.email.number@edu.uiz.ac.ma](mailto:teammate.email@example.com)
-    - **LinkedIn :** [username](https://linkedin.com/in/yourprofile)
+    - **Email:** [sofyane.habbouch.92@edu.uiz.ac.ma](mailto:teammate.email@example.com)
+    - **Github :** [sofyanehb](https://github.com/sofyanehb)
 
 - Mohamed :
     - **Email :** [mohamed.hammou.78@edu.uiz.ac.ma](mailto:your.email@example.com)
