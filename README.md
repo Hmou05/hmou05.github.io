@@ -4,7 +4,7 @@ Welcome to the repository for our personal website hosted on [GitHub Pages](http
 
 ---
 
-## 📑 Table of Contents  
+## 📑## Table of Contents  
 - [About the Project](#about-the-project)  
 - [Key Features](#key-features)  
 - [Live Demo](#live-demo)  
