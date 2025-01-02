@@ -4,7 +4,7 @@ Welcome to the repository for our personal website hosted on [GitHub Pages](http
 
 ---
 
-## 📑## Table of Contents  
+## 📑 Table of Contents
 - [About the Project](#about-the-project)  
 - [Key Features](#key-features)  
 - [Live Demo](#live-demo)  
@@ -18,13 +18,13 @@ Welcome to the repository for our personal website hosted on [GitHub Pages](http
 
 ---
 
-## ✨ About the Project  
+## ✨ About the Project
 
 This project is a collaborative creation, designed and developed with my classmate. Together, we built a responsive and interactive website that provides a portfolio to showcase our individual and joint projects.  
 
 ---
 
-## 🚀 Key Features  
+## 🚀 Key Features
 
 - **Dynamic Portfolio**: Highlights our joint projects and individual achievements with detailed descriptions and links.
 - **Blog Section**: Articles and tutorials on topics we're passionate about.
@@ -35,43 +35,43 @@ This project is a collaborative creation, designed and developed with my classma
 
 ---
 
-## 🎯 Live Demo  
+## 🎯 Live Demo
 
 Explore the live website here: [🌐 hmou05.github.io](https://hmou05.github.io/)  
 
 ---
 
-## ⚙️ Getting Started  
+## ⚙️ Getting Started
 
-### Prerequisites  
+### Prerequisites
 - Modern browser (e.g., Chrome, Firefox)  
 - [Git](https://git-scm.com/)  
 - Optional: [Node.js](https://nodejs.org/) for development  
 
-### Steps  
+### Steps
 
-1. **Clone the repository**:  
+1. **Clone the repository**:
    ```bash  
    git clone https://github.com/Hmou05/hmou05.github.io.git  
    ```  
 
-2. **Navigate into the project directory**:  
+2. **Navigate into the project directory**:
    ```bash  
    cd hmou05.github.io  
    ```  
 
-3. **Launch locally**:  
+3. **Launch locally**:
    ```bash  
    python -m http.server 8000  
    ```  
 
-4. Open your browser and navigate to `http://localhost:8000`.  
+4. Open your browser and navigate to `http://localhost:8000`.
 
 ---
 
-## 🛠️ Technologies Used  
+## 🛠️ Technologies Used
 
-- **HTML5**, **CSS3**, and **JavaScript**  
+- **HTML5**, **CSS3**, and **JavaScript**
 - Responsive design principles.
 - Planned enhancements:
     - **New design for the footer**
@@ -80,7 +80,7 @@ Explore the live website here: [🌐 hmou05.github.io](https://hmou05.github.io/
 
 ---
 
-## 📁 Directory Structure  
+## 📁 Directory Structure
 
 ```plaintext  
 hmou05.github.io/
@@ -95,7 +95,7 @@ hmou05.github.io/
 
 ---
 
-## 🙌 Contributing  
+## 🙌 Contributing
 
 1. Fork the repository.  
 2. Create a branch (`git checkout -b feature/NewFeature`).  
@@ -105,20 +105,20 @@ hmou05.github.io/
 
 ---
 
-## 🤝 Acknowledgments  
+## 🤝 Acknowledgments
 
 This project wouldn't have been possible without teamwork! Huge thanks to:  
 - My classmate and co-developer, [Sofyane Habbouch](#)  
 
 ---
 
-## 📜 License  
+## 📜 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.  
 
 ---
 
-## 📬 Contact  
+## 📬 Contact
 
 Feel free to reach out to us:  
 - Sofyane :
@@ -129,6 +129,6 @@ Feel free to reach out to us:
     - **Email :** [mohamed.hammou.78@edu.uiz.ac.ma](mailto:your.email@example.com)
     - **LinkedIn :** [mohamed-hammou](https://linkedin.com/in/yourprofile)
 
-Thanks for visiting! 🌟  
+Thanks for visiting! 🌟
 ```
 Let me know if you'd like to add your own project here, or suggest any Improvements on the website.
