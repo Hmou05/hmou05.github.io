@@ -37,7 +37,9 @@ This project is a collaborative creation, designed and developed with my classma
 
 ## 🎯 Live Demo
 
-Explore the live website here: [🌐 hmou05.github.io](https://hmou05.github.io/)  
+Explore the live website here:
+- [🌐 https://hmou05.github.io](https://hmou05.github.io/)
+- [🌐 https://vallysite.netlify.app](https://vallysite.netlify.app)
 
 ---
 
