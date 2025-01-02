@@ -117,12 +117,14 @@ a {
 /* Importing Google font - Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
+
 .footer {
     position: absolute;
+    bottom: 0;
+    left: 0;
     max-width: 1280px;
     width: 95%;
-    background: #251756;
-    border-radius: 6px;
+    background: var(--background-gradient);
 }   
 
 .footer .footer-row {
