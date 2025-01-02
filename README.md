@@ -130,6 +130,7 @@ Feel free to reach out to us:
 - Mohamed :
     - **Email :** [mohamed.hammou.78@edu.uiz.ac.ma](mailto:your.email@example.com)
     - **LinkedIn :** [mohamed-hammou](https://linkedin.com/in/yourprofile)
+    - **Github :** [Hmou05](https://github.com/hmou05)
 
 Thanks for visiting! 🌟
 ```
