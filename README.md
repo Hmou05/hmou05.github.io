@@ -31,7 +31,6 @@ This project is a collaborative creation, designed and developed with my classma
 - **Fully Responsive Design**: Optimized for all devices.
 - **Custom Themes**: Light and dark modes for enhanced user experience (in progress).
 - **Collaborative Work**: Showcasing teamwork and co-development.
-- **Bootstrap Footer**: Styled footer designed using Bootstrap for consistency and responsiveness.
 
 ---
 
