@@ -119,9 +119,8 @@ a {
 
 .footer {
     position: absolute;
-    max-width: 1280px;
     width: 100%;
-    background: #251756;
+    background: #130066;
 }   
 
 .footer .footer-row {
