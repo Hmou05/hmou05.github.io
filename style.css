@@ -77,7 +77,7 @@ main {
     flex-wrap: wrap;
     gap: 1em;
     border-radius: 10px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid #000;
     user-select: none;
     padding: 2em;
     margin: 1em;
@@ -117,14 +117,11 @@ a {
 /* Importing Google font - Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-
 .footer {
     position: absolute;
-    bottom: 0;
-    left: 0;
     max-width: 1280px;
-    width: 95%;
-    background: var(--background-gradient);
+    width: 100%;
+    background: #251756;
 }   
 
 .footer .footer-row {
