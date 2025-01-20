@@ -46,7 +46,6 @@ header {
 
 /*header*/
 .hero {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,6 +76,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 1.5vw;
 }
 
 .btn:hover, button[type="submit"]:hover {
