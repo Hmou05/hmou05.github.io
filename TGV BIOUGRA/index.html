@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGV Biougra - Réservation de Train</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">TGV Biougra 🚅</div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reservation">Réservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <!-- Accueil -->
+        <div id="home" class="hero">
+            <i class="fa-solid fa-train"></i>
+            <h1>Voyagez avec TGV Biougra</h1>
+            <p>Une expérience de voyage rapide, confortable et fiable.</p>
+            <a href="#reservation" class="btn">Réservez Maintenant</a>
+        </div>
+
+        <!-- Services -->
+        <div id="RR">
+            <section id="services" class="services">
+                <h2 id="TT">Profitez Nos Services !!</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>Trajets Rapides</h3>
+                        <p>Profitez de nos trajets directs entre les grandes villes du Maroc.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Confort Premium</h3>
+                        <p>Des sièges spacieux et un service à bord de qualité.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Réservations Simples</h3>
+                        <p>Réservez vos billets en quelques clics avec notre système en ligne.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Réservation -->
+            <section id="reservation" class="reservation-form">
+                <h2>Réservez votre billet</h2>
+                <form id="train-form">
+                    <label for="depart">Départ :</label><br></br>
+                    <input type="text" id="depart" placeholder="Ville de départ" required><br></br>
+                    <label for="arrivee">Arrivée :</label><br></br>
+                    <input type="text" id="arrivee" placeholder="Ville d'arrivée" required><br></br>
+                    <label for="date">Date :</label><br></br>
+                    <input type="date" id="date" required><br></br>
+                    <button type="submit" class="btn" id="bttn">Rechercher</button><br></br>
+                </form>
+                <p id="result"></p>
+            </section>
+        </div>
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form">
+                <label for="name">Nom :</label><br></br>
+                <input type="text" id="name" placeholder="Votre nom" required><br></br>
+                <label for="email">Email :</label><br></br>
+                <input type="email" id="email" placeholder="Votre email" required><br></br>
+                <label for="message">Message :</label><br></br>
+                <textarea id="message" placeholder="Votre message" required></textarea><br></br>
+                <button type="submit" id="bttun">Envoyer</button><br></br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TGV Biougra. Tous droits réservés.Houssam Ridouane </p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
