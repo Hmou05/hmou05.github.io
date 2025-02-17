@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+:root {
+    --main-color: #ffffff;
+    --line-height: 1em;
+    --large-cell-width: 50cap;
+    --normal-cell-width: 12cap;
+    --number-cell-width: 6cap;
+    --icon-dimensions: 2em;
+    --padding: .7em;
+    --gap: .5em;
+    --line-bg: #ecf9ff;
+    --border-radius: 10px;
+    --table-color: #fff;
+    --input-bgcolor: #f0f0f0;
+}
+
+.no-selection {
+    user-select: none;
+}
+
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+
+html {
+    padding: var(--padding);
+}
+
+body {
+    background-color: var(--main-color);
+    height: minmax(100vh, 100vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    height: 4px;
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: #a4c8ff;
+}
+
+#header {
+    width: 100%;
+    padding: var(--padding);
+    background-color: var(--line-bg);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap);
+    border-radius: var(--border-radius);
+    &>#buttons>.icon {
+        border: 2px solid lightsteelblue;
+        padding: 2px;
+        width: var(--icon-dimensions) !important;
+        aspect-ratio: 4/4 !important;
+        border-radius: var(--border-radius);
+        &:hover {
+            scale: .95;
+        }
+    }
+
+    &>#goto {
+        display: flex;
+        gap: var(--gap);
+        height: 100%;
+        &>input {
+            width: 10cap;
+            height: 30px;
+            padding-left: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(247, 247, 247);
+        }
+        &>a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #000;
+            width: 50px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: #a4c8ff;
+            &:hover {
+                background-color: lightgreen;
+                color: rgb(47, 0, 255);
+            }
+        }
+    }
+}
+
+#table {
+    min-width: fit-content;
+    max-width: 100cap;
+    height: 80vh;
+    background-color: var(--table-color);
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: scroll;
+    cursor: cell;
+}
+
+#table-head {
+    position: sticky;
+    top: -.9em;
+    font-size: 1em;
+    width: 100%;
+    height: calc(var(--line-height) + 2em);
+    padding: calc(var(--padding) + .5em);
+    border-radius: var(--border-radius);
+    background-color: #e1d6ff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    cursor: default;
+    &>div {
+        width: var(--normal-cell-width);
+        height: calc(var(--line-height) + 1.3em);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+    }
+    &>.DESIGNATION {
+        width: var(--large-cell-width);
+    }
+}
+
+
+.number {
+    width: var(--number-cell-width);
+    height: calc(var(--line-height) + 1.3em);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+
+.table-row {
+    font-size: 1em;
+    width: 100%;
+    height: var(--line-height);
+    padding: 1.7em calc(var(--padding));
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    transition: all .5s ease-in-out;
+    &:hover {
+        background-color: #e2dbff;
+    }
+    &>div, &>.inputs {
+        width: var(--normal-cell-width);
+        height: calc(var(--line-height) + 1.3em);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-wrap: nowrap;
+        font-size: 1em;
+        border: none;
+        padding-left: 1em;
+    }
+    &>div {
+        background-color: rgb(255, 244, 222);
+        cursor: default;
+    }
+    &>.number {
+        background-color: rgb(255, 247, 210);
+        border-radius: var(--border-radius);
+        font-family: Poppins;
+    }
+    &>.inputs {
+        background: #9fd1ff6b;
+        cursor: cell;
+        &:hover {
+            outline: 2px solid #0084ff;
+            cursor: cell;
+        }
+        &:focus {
+            outline: 3px solid #000000;
+            cursor: text;
+        }
+    }
+    &>.input[type="number"] {
+        &::-webkit-outer-spin{
+            display: none;
+        }
+    }
+    &>.DESIGNATION {
+        width: var(--large-cell-width);
+    }
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devis Creator - LAHSEN HAMMOU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header" class="no-selection">
+    <div id="buttons">
+      <img src="./Favicons/save.png" alt="save" title="save" class="icon" />
+      <img src="./Favicons/print.png" alt="print" title="print" class="icon" />
+      <img src="./Favicons/delete.png" alt="delete" title="delete line" class="icon" id="delete"
+        onclick="deleteLine()" />
+      <img src="./Favicons/add.png" alt="add" title="add line" class="icon" id="add" onclick="addLine()" />
+    </div>
+    <div id="goto">
+      <input type="number" min=1 name="goto" id="gotoline" placeholder="Go to line">
+      <a href="#" id="goto-btn">Go</a>
+    </div>
+  </header>
+  <br>
+  <hr><br>
+  <main id="table">
+    <header id="table-head" class="no-selection">
+      <span class="number no-selection">Num</span>
+      <div class="DESIGNATION left">Désignation</div>
+      <div class="QUANTITE center">Qté</div>
+      <div class="PU-HT center">P.U HT</div>
+      <div class="PU-TTC center">P.U TTC</div>
+      <div class="MONTANT-TTC center">Montant TTC</div>
+    </header>
+  </main>
+  <br>
+  <hr><br>
+  <footer id="actions">
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
