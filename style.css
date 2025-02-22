@@ -87,7 +87,7 @@ main {
         transition: all .5s ease;
         box-shadow: 5px 5px 0 #ffbbbb;
         width: 25%;
-        aspect-ratio: 1/1.618;
+        aspect-ratio: 16/9;
         background-color: red;
         padding: 1em;
         background-color: #fff;
