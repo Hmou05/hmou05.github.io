@@ -81,13 +81,12 @@ main {
     user-select: none;
     padding: 2em;
     margin: 1em;
-    font-size: 4vw;
     & > .card {
         color: #303030;
         transition: all .5s ease;
         box-shadow: 5px 5px 0 #ffbbbb;
-        width: 25%;
-        aspect-ratio: 16/9;
+        width: 180px;
+        height: 291px;
         background-color: red;
         padding: 1em;
         background-color: #fff;
