@@ -20,6 +20,10 @@
     --input-bgcolor: #f0f0f0;
 }
 
+/*[inert] > * {
+    opacity: 0.5;
+}*/
+
 .no-selection {
     user-select: none;
 }
@@ -152,6 +156,14 @@ hr {
     font-size: 1em;
 }
 
+input[type="number"] {
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    -moz-appearance: textfield;
+}
 
 .table-row {
     font-size: 1em;
@@ -162,7 +174,7 @@ hr {
     display: flex;
     align-items: center;
     gap: var(--gap);
-    transition: all .5s ease-in-out;
+    transition: height .5s ease-in-out;
     &:hover {
         background-color: #e2dbff;
     }
@@ -196,11 +208,6 @@ hr {
         &:focus {
             outline: 3px solid #000000;
             cursor: text;
-        }
-    }
-    &>.input[type="number"] {
-        &::-webkit-outer-spin{
-            display: none;
         }
     }
     &>.DESIGNATION {

@@ -1,10 +1,10 @@
-
 var len = 0;
 
 onEnterKeyPressedInInput();
 storeIdInBtn();
+addLines(40);
 
-addLines(30);
+
 
 function addLines(n = 1) {
   for (var i = 0; i < n; i++) {
@@ -24,69 +24,88 @@ function set_IDs() { }
 
 function update() {
   let gotoline = document.getElementById("gotoline");
-  gotoline.setAttribute("max", len);
+  gotoline.setAttribute("max", String(len));
 }
 
 function onEnterKeyPressedInInput() {
   let gotoInput = document.getElementById("gotoline");
   gotoInput.addEventListener("keypress", (e) => {
     if (e.key == "Enter") {
-      document
-        .getElementById("goto-btn")
-        .setAttribute("href", `#_${gotoInput.value}`);
-      document.getElementById("goto-btn").click();
+      let link = document.getElementById("goto-btn");
+      link.setAttribute("href", `#_${gotoInput.value}`);
+      link.click();
     }
   });
 }
 
-function onEnterKeyPressedInCell() {
-  if (len > 1) {
-    var ID = len;
-    ["dest", "qte", "puht"].forEach(c => {
-      let destCell = document.getElementById(`${c}_${ID - 1}`);
-      // Using Enter
-      destCell.addEventListener("keypress", (e) => {
-        if (e.key == "Enter") {
-          document
-            .getElementById(`${c}_${ID}`).focus();
-          document.getElementById(`_${ID}`).style.backgroundColor = '#e2dbff';
-          setInterval(() => {
-            document.getElementById(`_${ID}`).style.backgroundColor = '#ffffff';
-          }, 1000);
+function goDown(ID) {
+    if (ID > 1) {
+        for(let c of ["dest", "qte", "puht"]) {
+            let previousCell = document.getElementById(`${c}_${ID - 1}`);
+            previousCell.addEventListener("keydown", (e) => {
+                if (["Enter", "ArrowDown"].includes(e.key)) {
+                    let thisCellContainer = document.getElementById(`_${ID}`);
+                    let thisCell = document.getElementById(`${c}_${ID}`);
+                    thisCell.focus({
+                        focusVisible: true,
+                        preventScroll: true}
+                    );
+                    thisCellContainer.style.backgroundColor = '#e2dbff';
+                    setInterval(() => {
+                        thisCellContainer.style.backgroundColor = '#ffffff';
+                    }, 500);
+                }
+            });
         }
-      });
-      // Using Buttom Arrow
-      destCell.addEventListener("keypress", (e) => {
-        if (e.keyCode == 41) {
-          document
-            .getElementById(`${c}_${ID}`).focus();
-          document.getElementById(`_${ID}`).style.backgroundColor = '#e2dbff';
-          setInterval(() => {
-            document.getElementById(`_${ID}`).style.backgroundColor = '#ffffff';
-          }, 1000);
+    }
+}
+
+function goUp(ID) {
+    if (0 <= ID < len) {
+        for(let c of ["dest", "qte", "puht"]) {
+            let thisCell = document.getElementById(`${c}_${ID}`);
+            thisCell.addEventListener("keydown", (e) => {
+                if (e.key == "ArrowUp") {
+                    let previousCellContainer = document.getElementById(`_${ID - 1}`);
+                    let previousCell = document.getElementById(`${c}_${ID - 1}`);
+                    previousCell.focus({preventScroll: true});
+                    previousCellContainer.style.backgroundColor = '#e2dbff';
+                    setInterval(() => {
+                        previousCellContainer.style.backgroundColor = '#ffffff';
+                    }, 500);
+                }
+            });
         }
-      });
-    });
-  }
+    }
+}
+
+function move() {
+    let ID = len;
+    goUp(ID);
+    goDown(ID);
 }
 
 
 function oninputEvent() {
   let line = document.querySelector(`#_${len}`);
-  let cells = line.children;
-  cells[1].oninput = () => {
-    cells[1].value = (cells[1].value).toUpperCase();
+  let cells = {
+    input: line.querySelectorAll("input"),
+    div: line.querySelectorAll("div")
+  }
+  cells.input[0].oninput = () => {
+    cells.input[0].value = (cells.input[0].value).toUpperCase();
   };
-  [cells[2], cells[3]].forEach((cell) => {
+  for (let cell of [cells.input[1], cells.input[2]]) {
     cell.oninput = () => {
-      var puttc = 1.2 * Number(cells[3].value);
-      cells[4].textContent = puttc.toFixed(3);
-      cells[5].textContent = (puttc * Number(cells[2].value)).toFixed(3);
+      var puttc = 1.2 * Number(cells.input[2].value);
+      cells.div[0].textContent = puttc.toFixed(3);
+      cells.div[1].textContent = (puttc * Number(cells.input[1].value)).toFixed(3);
     };
-  });
+  }
 }
 
 function addLine() {
+  let table = document.getElementById("table");
   len++;
   table.insertAdjacentHTML(
     "beforeend",
@@ -101,7 +120,7 @@ function addLine() {
   );
   oninputEvent();
   update();
-  onEnterKeyPressedInCell();
+  move();
 }
 
 function deleteLine() {
@@ -115,79 +134,4 @@ function deleteLine() {
 
 function gotoNextCell() {
   return 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function createTableFromFile(file) {
-  function addFileLine(DESIGNATION, QUANTITE, PUHT) {
-    len++;
-    table.insertAdjacentHTML(
-      "beforeend",
-      `<div class="table-row" id="_${len}">
-            <span class="number no-selection">${len}</span>
-                <input type="text" class="inputs DESIGNATION left" autocomplete="off" value="${DESIGNATION}" />
-                <input type="number" min=1 class="inputs QUANTITE center" id="qte" autocomplete="off" value="${QUANTITE}" />
-                <input type="number" min=0.5 class="inputs PU-HT center" id="puht" autocomplete="off" value="${PUHT}" />
-                <div class="PU-TTC center">${(PUHT * 1.2).toFixed(3)}</div>
-                <div class="MONTANT-TTC center">${(PUHT * 1.2 * QUANTITE).toFixed(3)}</div>
-            </div>`
-    );
-    oninputEvent();
-    update();
-  }
 }
