@@ -81,6 +81,7 @@ main {
     user-select: none;
     padding: 2em;
     margin: 1em;
+    font-size: 7vw;
     & > .card {
         color: #303030;
         transition: all .5s ease;
