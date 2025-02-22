@@ -85,8 +85,8 @@ main {
         color: #303030;
         transition: all .5s ease;
         box-shadow: 5px 5px 0 #ffbbbb;
-        width: 180px;
-        height: 250px;
+        width: 25%;
+        aspect-ratio: 1/1.618;
         background-color: red;
         padding: 1em;
         background-color: #fff;
