@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: space-around;
     background: linear-gradient(#ffd8e2, rgb(7, 9, 53));
 }
 
