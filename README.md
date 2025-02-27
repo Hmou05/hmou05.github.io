@@ -1,6 +1,6 @@
 # 🌐 Linkurs : Projects Management Application
 
-Welcome to the repository for our personal website hosted on [GitHub Pages](https://hmou05.github.io/), [Netlify](https://vallysite.netlify.app/)! This site is a collaborative effort showcasing our projects.  
+Welcome to the repository for our personal website hosted on [GitHub Pages](https://hmou05.github.io/), [Netlify](https://linkurs.netlify.app/)! This site is a collaborative effort showcasing our projects.  
 
 ---
 
@@ -38,7 +38,7 @@ This project is a collaborative creation, designed and developed with my classma
 
 Explore the live website here:
 - [🌐 https://hmou05.github.io](https://hmou05.github.io/)
-- [🌐 https://vallysite.netlify.app](https://vallysite.netlify.app)
+- [🌐 https://vallysite.netlify.app](https://linkurs.netlify.app)
 
 ---
 
