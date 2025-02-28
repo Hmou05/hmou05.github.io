@@ -1,4 +1,4 @@
-# 🌐 Linkurs : Projects Management Application
+# 🌐 Linkurs : Project Preview Application
 
 Welcome to the repository for our personal website hosted on [GitHub Pages](https://hmou05.github.io/), [Netlify](https://linkurs.netlify.app/)! This site is a collaborative effort showcasing our projects.  
 
