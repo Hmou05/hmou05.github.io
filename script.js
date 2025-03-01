@@ -1,3 +1,15 @@
+function spin() {
+    setTimeout(() => {
+        for (sec of ["header", "main", "footer"]) {
+            document.querySelector(sec).style.display = "block";
+        }
+        document.querySelector(".spinner").style.display = "none";
+    }, 3000);
+}
+
+document.onloadeddata = spin();
+
+
 // If the page is loaded, this animation will start.
 const snake = document.getElementById("snake");
 document.addEventListener("DOMContentLoaded", ()=> {
