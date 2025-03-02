@@ -141,6 +141,8 @@ main {
 			height: 50px;
 			padding: 0.5em;
             border-radius: 1em;
+            align-items: left;
+            gap: .5em;
 		}
 		&:hover {
 			translate: 5px 5px;
