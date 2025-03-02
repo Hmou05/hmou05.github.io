@@ -183,18 +183,15 @@ a {
     &:hover {
         background-color: #889bf3;
         border: 2px solid #889cf386;
+        & > svg {
+            fill: white;
+        }
     }
 }
 .download-btn svg {
 	width: 1em;
 	height: 1em;
 	transition: all 0.3s ease;
-}
-.download-btn:hover svg {
-	fill: white;
-}
-.download-btn:hover {
-	background-color: rgb(168, 38, 255);
 }
 
 footer {
