@@ -143,22 +143,22 @@ main {
 			border-radius: 1em;
 			align-items: right;
 			gap: 0.5em;
-			z-index: -1;
 		}
 		&:hover {
 			translate: 5px 5px;
 			box-shadow: none;
 			background-color: #889bf3;
 			color: #fff;
-			& > .actions {
+			.actions {
 				display: flex;
-				background-color: #ffffff36;
+				background-color: #ffffff4d;
 			}
 			img {
 				scale: 0.9;
 			}
 		}
 		& > img {
+            z-index: -1;
 			transition: scale 0.5s ease;
 			width: 100%;
 			animation: infiniteScale 1 ease-in-out;
