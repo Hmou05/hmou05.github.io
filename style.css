@@ -139,7 +139,7 @@ main {
 			display: none;
 			width: 100%;
 			height: fit-content;
-			padding: 0.5em;
+			padding: 0.3em;
 			border-radius: 1em;
 			align-items: right;
 			gap: 0.5em;
@@ -189,8 +189,8 @@ a {
     }
 }
 .download-btn svg {
-	width: 1em;
-	height: 1em;
+	width: 1.5em;
+	height: 1.5em;
 	transition: all 0.3s ease;
 }
 
