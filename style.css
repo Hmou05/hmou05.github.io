@@ -142,7 +142,7 @@ main {
 			padding: 0.3em;
 			border-radius: 1em;
 			align-items: right;
-			gap: 0.5em;
+			gap: .5em 1em;
             z-index: 1;
 		}
 		&:hover {
@@ -154,8 +154,8 @@ main {
 				display: flex;
 				background-color: #ffffff4d;
 			}
-			img {
-				scale: 0.9;
+			img, .actions {
+				scale: .9;
 			}
 		}
 		& > img {
@@ -176,7 +176,7 @@ a {
 	background-color: white;
 	width: 2em;
 	height: 2em;
-	border-radius: 50%;
+	border-radius: 1em;
 	position: relative;
 	z-index: 1;
 	transition: all 0.2s ease;
@@ -190,8 +190,8 @@ a {
     }
 }
 .download-btn svg {
-	width: 1.5em;
-	height: 1.5em;
+	width: 2em;
+	aspect-ratio: 4/4;
 	transition: all 0.3s ease;
 }
 
