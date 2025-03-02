@@ -174,8 +174,8 @@ a {
 .download-btn {
 	border: 2px solid #889bf3;
 	background-color: white;
-	width: 2em;
-	height: 2em;
+	width: 3em;
+	aspect-ratio: 4/4;
 	border-radius: 1em;
 	position: relative;
 	z-index: 1;
@@ -190,7 +190,7 @@ a {
     }
 }
 .download-btn svg {
-	width: 2em;
+	width: 1.5em;
 	aspect-ratio: 4/4;
 	transition: all 0.3s ease;
 }
