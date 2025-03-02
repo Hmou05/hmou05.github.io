@@ -205,6 +205,7 @@ footer {
 	text-align: center;
 	font-weight: 600;
 	letter-spacing: 5px;
+    user-select: none;
 }
 
 
