@@ -1,107 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Linkurs</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="icon" href="./Images/favicon.svg" type="image/x-icon" />
-	</head>
 
-	<body>
-		<div class="spinner"></div>
-		<header>
-			<nav>
-				<span>Linkurs&emsp;</span>
-				<ul>
-					<li>
-                        <a href="./index.html" class="nav-link">Home</a>
-                    </li>
-					<li>
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-					<li>
-                        <a href="#" class="nav-link">Creators</a>
-                    </li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<h1 id="main-title">Projects</h1>
-			<section id="tools">
-				<a class="card" href="./devis-creator/public/index.html">
-                    <div class="actions">
-                        <button class="Btn">
-                            <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
-                            <span class="icon2"></span>
-                            <span class="tooltip">Download</span>
-                         </button>
-                    </div>
-					<img
-						class="icon"
-						src="https://cdn-icons-png.flaticon.com/512/265/265707.png"
-					/>
-					<h3 class="name">Online Facture</h3>
-				</a>
-				<a class="card" href="./smart fan controller/index.html">
-					<img class="icon" src="./Images/fan.png" />
-					<h3 class="name">Smart Fan Controller</h3>
-				</a>
-				<a class="card" href="./Sign_in-sign_up-Login-form/index.html">
-					<img class="icon" src="./Images/form.png" />
-					<h3 class="name">Register Form</h3>
-				</a>
-				<a
-					class="card"
-					href="https://www.programiz.com/python-programming/online-compiler/"
-				>
-					<img class="icon" src="./Images/Python.png" />
-					<h3 class="name">Online Python Interpreter</h3>
-				</a>
-				<a
-					class="card"
-					href="https://www.programiz.com/c-programming/online-compiler/"
-				>
-					<img class="icon" src="./Images/C.png" />
-					<h3 class="name">Online C Compiler</h3>
-				</a>
-				<a class="card" href="https://www.supercook.com/#/desktop">
-					<img
-						class="icon"
-						src="https://www.svgrepo.com/show/413500/cook.svg"
-					/>
-					<h3 class="name">What to cook?</h3>
-				</a>
-				<a class="card" href="./TGV BIOUGRA/index.html">
-					<img
-						class="icon"
-						src="https://www.svgrepo.com/show/476798/train.svg"
-					/>
-					<h3 class="name">TGV Biougra</h3>
-				</a>
-				<a class="card" href="./random-project/index.html">
-					<img
-						class="icon"
-						src="https://cdn-icons-png.flaticon.com/512/1055/1055804.png"
-					/>
-					<h3 class="name">Random Web Project</h3>
-				</a>
-				<a class="card" href="https://uiverse.io">
-					<img
-						class="icon"
-						src="https://cdn-icons-png.flaticon.com/512/11987/11987364.png"
-					/>
-					<h3 class="name">UIVERSE</h3>
-				</a>
-			</section>
-		</main>
-        <footer>
-            <p>&copy;Tous droits réservés 2025</p>
-        </footer>
-		<script src="./script.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkurs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./Images/favicon.svg" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="spinner"></div>
+    <header>
+        <nav>
+            <span>Linkurs&emsp;</span>
+            <ul>
+                <li>
+                    <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Creators</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="main-title">Projects</h1>
+        <section id="tools">
+            <a class="card" href="./devis-creator/public/index.html">
+                <div class="actions">
+                    <button class="download-btn">
+                        <svg id="download" viewBox="0 0 24 24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.29,17.29,13,18.59V13a1,1,0,0,0-2,0v5.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42ZM18.42,6.22A7,7,0,0,0,5.06,8.11,4,4,0,0,0,6,16a1,1,0,0,0,0-2,2,2,0,0,1,0-4A1,1,0,0,0,7,9a5,5,0,0,1,9.73-1.61,1,1,0,0,0,.78.67,3,3,0,0,1,.24,5.84,1,1,0,1,0,.5,1.94,5,5,0,0,0,.17-9.62Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/265/265707.png" />
+                <h3 class="name">Online Facture</h3>
+            </a>
+            <a class="card" href="./smart fan controller/index.html">
+                <img class="icon" src="./Images/fan.png" />
+                <h3 class="name">Smart Fan Controller</h3>
+            </a>
+            <a class="card" href="./Sign_in-sign_up-Login-form/index.html">
+                <img class="icon" src="./Images/form.png" />
+                <h3 class="name">Register Form</h3>
+            </a>
+            <a class="card" href="https://www.programiz.com/python-programming/online-compiler/">
+                <img class="icon" src="./Images/Python.png" />
+                <h3 class="name">Online Python Interpreter</h3>
+            </a>
+            <a class="card" href="https://www.programiz.com/c-programming/online-compiler/">
+                <img class="icon" src="./Images/C.png" />
+                <h3 class="name">Online C Compiler</h3>
+            </a>
+            <a class="card" href="https://www.supercook.com/#/desktop">
+                <img class="icon" src="https://www.svgrepo.com/show/413500/cook.svg" />
+                <h3 class="name">What to cook?</h3>
+            </a>
+            <a class="card" href="./TGV BIOUGRA/index.html">
+                <img class="icon" src="https://www.svgrepo.com/show/476798/train.svg" />
+                <h3 class="name">TGV Biougra</h3>
+            </a>
+            <a class="card" href="./random-project/index.html">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1055/1055804.png" />
+                <h3 class="name">Random Web Project</h3>
+            </a>
+            <a class="card" href="https://uiverse.io">
+                <img class="icon" src="https://cdn-icons-png.flaticon.com/512/11987/11987364.png" />
+                <h3 class="name">UIVERSE</h3>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Tous droits réservés 2025</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
 </html>
