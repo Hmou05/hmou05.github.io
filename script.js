@@ -9,3 +9,11 @@ function spin() {
 
 document.onloadeddata = spin();
 
+
+function protectImageDownload() {
+    document.querySelectorAll("img").forEach(element => {
+        element.setAttribute("onContextMenu", "return false;");
+    });    
+}
+
+protectImageDownload();
